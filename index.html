@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Signika:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script/script.js" defer></script>
+    <title>Imagem hora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img-fundo-class" id="img-fundo-id">
+            <div class="destaques">
+                <p class="saudacao"></p>
+                <p class="hora"></p>
+                <p class="data"></p>
+            </div>
+        </div>
+        <div class="box-center">
+            <h2>Previsão do tempo</h2>
+            <div class="campo-pesquisa">
+                <input type="text" placeholder="Digite o nome de uma cidade" id="input-dados">
+                <button id="btn" class="fas fa-search"></button>
+            </div>
+            <div id="center-info">
+                <div class="cidade-destalhes">
+                    <h2 id="cidade"></h2>
+                    <img src="" alt="bandeira-pais" id="bandeira-pais">
+                </div>
+                
+                <div class="condicoes-tempo">
+                    <p id="graus"></p>
+                    <img src="" alt="imagem condicoes tempo" id="imagem-tempo">
+                    <span class="condicoes-tempo" id="condicoes-tempo"></span>
+                </div>
+                <p class="umidade" id="umidade"></p>
+            </div>
+            <div class="erro" id="erro">
+                <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.img-fundo-class {
+    height: 100vh;
+}
+
+.destaques {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.img-manha-dois {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-image: url('../imagens/img_bomdia_retrato.jpg');
+}
+
+.ceu_tarde_um {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-image: url('../imagens/img_boatarde_retrato.jpg');
+}
+
+.ceu_tarde_dois {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-image: url('../imagens/img_pordosol_retrato.jpg');
+}
+
+.ceu_noite_um {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-image: url('../imagens/img_boanoite_retrato.jpg');
+}
+
+.madrugada {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    background-image: url('../imagens/madrugada.jpg');
+}
+
+p.saudacao,
+p.hora,
+p.data{
+    padding: 40px;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: #b4b3b3 1px 1px 0;
+    font-family: 'Signika', sans-serif;
+}
+
+.box-center {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 15px;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    font-weight: 300;
+    font-family: 'Signika', sans-serif;
+    background-color: rgba(107, 106, 106, 0.5);
+}
+
+.box-center p {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#center-info{
+    width: 100%;
+    padding: 7px;
+}
+
+.campo-pesquisa {
+    display: flex;
+}
+
+input {
+    width: 90%;
+    margin-right: 5px;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+}
+
+.cidade-destalhes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img{
+    width: 40px;
+    height: 30px;
+    display: none;
+    object-fit: cover;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: rgb(236, 166, 35);
+}
+
+button:hover {
+    background-color: rgb(237, 159, 14);
+}
+
+h2{
+    color: #fff;
+    font-size: 1.6em;
+    text-align: center;
+    font-weight: normal;
+}
+
+.erro {
+    display: none !important;
+}
+
+#erro p{
+    font-size: 0.9em;
+    color: #fff;
+    margin-top: 10px;
+    background-color: red;
+}
+
+#graus1{
+    color: red;
+}
+
+.condicoes-tempo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.condicoes-tempo span {
+    color: rgb(246, 246, 51);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Responsivo*/
+
+@media screen and (max-width: 775px) {
+    .destaques {
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+
+    p.saudacao,
+    p.hora,
+    p.data{
+    padding: 5px;
+    font-size: 1.7em;
+    }
+
+    .box-center {
+        width: 400px;
+        
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    p.saudacao,
+    p.hora,
+    p.data{
+    font-size: 1.5em;
+    }
+
+    .box-center {
+        width: calc(100% - 10px);
+    }
+
+    .campo-pesquisa {
+        display: block;
+        text-align: center;
+    }
+
+    button{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .destaques {
+        display: block;
+        text-align: left;
+        
+    }
+
+    p.saudacao,
+    p.hora,
+    p.data{
+    padding: 5px;
+    font-size: 1.2em;
+    color: #fff;
+    }
+
+    .box-center {
+        height: 80%;
+        text-align: center;
+    }
+}
